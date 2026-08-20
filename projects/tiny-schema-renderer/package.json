@@ -1,0 +1,59 @@
+{
+  "name": "@opentiny/tiny-schema-renderer",
+  "version": "1.0.0-beta.6",
+  "packageManager": "pnpm@9.14.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "pub": "pnpm publish --no-git-checks --access=public"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./transform-jsx": {
+      "import": "./dist/transform-jsx.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opentiny/tiny-schema-renderer",
+    "directory": "packages/canvas"
+  },
+  "bugs": {
+    "url": "https://github.com/opentiny/tiny-schema-renderer/issues"
+  },
+  "author": "OpenTiny Team",
+  "license": "MIT",
+  "homepage": "https://opentiny.design/tiny-engine",
+  "type": "module",
+  "dependencies": {
+    "@babel/standalone": "^7.23.0",
+    "@opentiny/tiny-engine-builtin-component": "^2.6.0",
+    "@vue/babel-plugin-jsx": "^1.2.5",
+    "@vue/shared": "^3.3.4",
+    "lodash": "4.17.21",
+    "postcss": "^8.5.6",
+    "postcss-selector-parser": "^7.1.0"
+  },
+  "devDependencies": {
+    "@opentiny/vue": "^3.28.0",
+    "@opentiny/vue-huicharts": "^3.28.0",
+    "@opentiny/vue-icon": "^3.28.0",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "rollup-plugin-visualizer": "6.0.5",
+    "eval5": "^1.4.8",
+    "vite": "^5.4.2",
+    "vue": "^3.5.0"
+  }
+}
